@@ -14,18 +14,14 @@ const Form = () => {
         <form
           action={formAction}
           className={clsx(
-            'not-prose w-full',
+            'not-prose w-full max-w-md',
             'space-y-6 mb-16',
-            'p-8 rounded border-4 border-solid border-whippedCream-dark',
+            'p-8 rounded-lg border-4 border-solid border-white/50',
           )}
           id="register"
         >
-          <h2 className="font-bold text-leafyGreen-dark text-3xl text-balance !mt-0">
-            Apply to be a{' '}
-            <span className="text-kitchensKelly-dark">
-              content strategy freelancer
-            </span>{' '}
-            with Four Kitchens
+          <h2 className="font-bold text-3xl text-balance">
+            Example of using a form to submit data to a Google Sheet
           </h2>
 
           {formState.errors && (
@@ -51,10 +47,10 @@ const Form = () => {
             </span>
             <input
               className="block w-full"
-              placeholder=""
               type="text"
               id="name"
               name="name"
+              placeholder="Luke Skywalker"
             />
           </label>
 
@@ -67,7 +63,7 @@ const Form = () => {
               id="email"
               name="email"
               className="block w-full"
-              placeholder="melissa@example.com"
+              placeholder="luke@skywalker.com"
             />
           </label>
 
@@ -100,10 +96,10 @@ const Form = () => {
               type="submit"
               className={clsx(
                 'inline-block rounded-lg',
-                'text-lg font-bold text-white',
+                'text-lg font-bold text-gray-900',
                 'transition-all',
                 'px-8 py-2 uppercase',
-                'bg-leafyGreen hover:bg-leafyGreen-dark',
+                'bg-orange-500 hover:bg-orange-600',
               )}
             >
               Apply
@@ -122,9 +118,7 @@ const Form = () => {
             Thank you for applying!
           </h2>
           <p>
-            You will hear from us in the next business day or so. If you
-            don&apos;t hear from us, reach out to{' '}
-            <a href="mailto:randy@fourkitchens.com">randy@fourkitchens.com</a>.
+            You will hear from us in the next business day or so.
           </p>
         </div>
       )}
