@@ -17,6 +17,7 @@ const Form = () => {
             'not-prose w-full max-w-md',
             'space-y-6 mb-16',
             'p-8 rounded-lg border-4 border-solid border-white/50',
+            "bg-white text-blue-900"
           )}
           id="register"
         >
@@ -96,10 +97,10 @@ const Form = () => {
               type="submit"
               className={clsx(
                 'inline-block rounded-lg',
-                'text-lg font-bold text-gray-900',
+                'text-lg font-bold text-white',
                 'transition-all',
                 'px-8 py-2 uppercase',
-                'bg-orange-500 hover:bg-orange-600',
+                'bg-blue-500 hover:bg-blue-600',
               )}
             >
               Apply
